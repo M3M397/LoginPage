@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+:root {
+    --primary: #DD946F;
+    --primary-hover: #CD7D7C;
+    --secondary: #EFD0F8;
+    --secondary-hover: #B8A1D9;
+    --aura: #9265CA80;
+    --background: #261E5A;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Mulish;
+}
+
+body {
+    background-image: url(universe.jpg);
+    background-repeat: no-repeat;
+    background-color: var(--background);
+    background-size: auto;
+}
+
+#centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#form {
+    background-color: var(--background);
+    width: 460px;
+    height: 536px;
+    border: 1px solid var(--primary);
+    border-radius: 16px;
+}
+
+#formcontent {
+    display: flex;
+    margin: 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#formimg {
+    margin-top: 32px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+h1 {
+    color: var(--secondary);
+}
+
+.textfield {
+    display: inline-block;
+
+}
+
+.textfield input {
+    color: var(--secondary);
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid var(--secondary);
+    border-radius: 8px;
+    font-size: 16px;
+    width: 394px;
+    height: 50px;
+    margin-top: 1px;
+    padding-left: 10px;
+
+}
+
+.textfield img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: -350px;
+    bottom: -45px;
+}
+
+#button button {
+    margin-top: 16px;
+    width: 394px;
+    height: 50px;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    color: var(--background);
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+#button button:hover {
+    background-color: var(--primary-hover);
+
+}
+
+#forgotpass {
+    margin-top: 16px;
+}
+
+#forgotpass a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 500;
+}
+
+#newacc {
+    margin-top: 20px;
+}
+
+#newacc a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--primary);
+    text-decoration: underline;
+    transition: all .3s ease;
+}
+
+#newacc a:hover {
+    color: var(--secondary-hover);
+
+}
